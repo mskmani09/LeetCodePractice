@@ -1,0 +1,23 @@
+TWO - SUM :
+JavaScript:
+
+Code:
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        for(let j = i+1; j<= nums.length; j++ ) {
+            if (nums[i]+nums[j] === target) {
+                let output = [i, j];
+                return output;
+            }                
+        }
+    }
+};
+
+Runtime Analysis:
+Runtime: 7392 ms, faster than 5.02% of JavaScript online submissions for Two Sum.
+Memory Usage: 47.1 MB, less than 5.40% of JavaScript online submissions for Two Sum.
